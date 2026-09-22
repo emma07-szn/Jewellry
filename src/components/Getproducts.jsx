@@ -24,6 +24,7 @@ const Getproducts = () => {
       setProducts(responce.data)
       
     } catch (error) {
+      setError(error)
       
     }
   }
@@ -40,6 +41,8 @@ const Getproducts = () => {
   return (
     <div className='row'>
       <h4>Availabe Products</h4>
+      <h4>{loading}</h4>
+      <h4>{error}</h4>
 
       {/* Product card */}
       {products.map((product)=>(

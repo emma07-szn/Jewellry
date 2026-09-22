@@ -24,7 +24,7 @@ const Addproducts = () => {
     
 
 // form data
-    const formData=new FormData
+    const formData=new FormData()
     formData.append("product_name",product_name)
     formData.append("product_description",product_description)
     formData.append("product_cost",product_cost)

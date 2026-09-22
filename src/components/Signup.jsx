@@ -23,7 +23,7 @@ const Signup = () => {
 
 
     // form data
-    const formData=new FormData
+    const formData=new FormData()
 
     formData.append("username",username)
     formData.append("email",email)

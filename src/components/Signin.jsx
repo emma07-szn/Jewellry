@@ -35,6 +35,7 @@ const Signin = () => {
 
         setLoading("")
         if(responce.data.user){
+          setSuccess(responce.data.message)
           navigate("/")
           localStorage.setItem("user",JSON.stringify(responce.data.user))
         }
@@ -53,6 +54,7 @@ const Signin = () => {
     <div className='row mt-3 justify-content-center'>
       <div className='col-md-6 card shadow p-4'>
         <h3>Signin</h3>
+
         <form action="" onSubmit={handlesubmit}>
 
         {/* bidding */}
